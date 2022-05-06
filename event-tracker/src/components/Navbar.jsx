@@ -9,9 +9,8 @@ const Navbar = () => {
 
             <ul className='nav-links'>
    
-                <li><NavLink to="/" className="nav-link">Events</NavLink></li>
-                <li><NavLink to="/" className="nav-link">Reminders</NavLink></li>
-                <li><NavLink to="/" className="nav-link">Create</NavLink></li>
+                <li><NavLink to="/events" className="nav-link">Events</NavLink></li>
+                <li><NavLink to="/create" className="nav-link">Create</NavLink></li>
 
 
             </ul>
