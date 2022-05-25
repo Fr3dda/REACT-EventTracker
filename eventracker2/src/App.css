@@ -1,0 +1,196 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body, html{
+  background-color: rgb(202, 202, 201);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+/* Navbar */
+
+.navbar{
+  background-color: rgb(187, 154, 64);
+  padding: 1.5rem 0;
+}
+.navbar .nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.navbar-brand{
+  color: #00fdfdc2;
+  text-shadow: 2px 2px 3px rgba(129, 116, 1, 0.671);
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: .5rem;
+  font-size: .8rem;
+}
+.nav-link:hover{
+  color: #00fdfdc2;
+  text-shadow: #00fdfdc2  1px 1px 5px ;
+  
+}
+/* NAVBAR   ENDS */
+
+/* EVENT CONTAINER */
+.No-events{
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 500;
+
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+  margin-bottom: 2rem;
+}
+.header h1{
+  margin-left: 1rem;
+  
+}
+
+.container {
+  background-color: rgb(245, 244, 244);
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 2px solid rgba(141, 56, 0, 0.24);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+
+.btn{
+  padding: .5rem;
+  background-color: rgba(24, 145, 0, 0.884);
+  border: 1px solid rgb(33, 102, 1);
+  border-radius: 20px;  
+  color: rgb(254, 255, 254);
+  cursor: pointer;
+}
+
+
+
+/*  EVENT */
+ .event{
+   background: rgba(214, 214, 214, 0.527);
+   margin: 9px;
+   padding: 9px 16px;
+   cursor: pointer;
+   border-radius: 20px;
+ }
+
+ .event h3{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+ }
+
+ .event svg{
+   color: red;
+   cursor: pointer;
+ }
+
+/*  Event End */
+.create-container{}
+
+/* CREATE EVENT */
+.add-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+
+}
+.form-control{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+}
+.event-control{
+
+}
+
+.event-name{
+font-size: 20px;
+font-weight: 500;
+padding: 10px;
+}
+.event-input{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.day-input{
+
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.reminder-control{
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+}
+.reminder-control label{
+padding: 5px;
+}
+
+.checkbox-input{
+  
+}
+
+.btn-submit{
+  padding: .5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(247, 103, 8, 0.644);
+  cursor: pointer;
+}
+.btn-submit:hover{
+  padding: .5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: orangered;
+  transition: ease-in-out 300ms;
+}
+.btn-submit:active{
+  padding: .5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: orangered;
+  border: 5px solid red;
+}
+
+.btn-text{
+  font-size: 15px;
+  color: white;
+}
+
+
+/* CREATE EVENT   END */

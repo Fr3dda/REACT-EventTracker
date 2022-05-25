@@ -15,6 +15,7 @@ const EventsView = () => {
   }, [])
 
   return (
+
     <div className='event-view'>
       <div className="event-view-container">
         <div className='event-view-text'>
