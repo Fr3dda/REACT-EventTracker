@@ -2,6 +2,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Views from './Views/Views';
 
+
 /* import { getEvents } from './store/actions/events.action'
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react' */

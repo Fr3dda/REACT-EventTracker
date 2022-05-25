@@ -16,7 +16,7 @@ const { data: events } = useSelector(state => state.events)
   return (
     <>
       {events.map((event) => (
-        <Event key={event.id}event={event} />
+        <Event key={event.id}event={event}  />
         ))}
     </>
 

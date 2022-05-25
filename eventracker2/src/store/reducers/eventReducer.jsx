@@ -7,15 +7,11 @@ const initState = {
             loading: false,
             error: null
           },
-
-    
-
 }
 
 
 const eventReducer = (state = initState, action) => {
     switch(action.type) {
-
         case actiontypes().event.addNewEvent:
             return {
                 ...state,

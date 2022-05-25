@@ -23,6 +23,14 @@ const eventsReducer = (state = initState, action) => {
                 error: null
             }
 
+        case actiontypes().events.addNewEvent:
+            return{
+                ...state,
+                data: [...state.data, action.payload],
+                loading: false,
+                error: null
+            }
+
 
             default:
                 return state
