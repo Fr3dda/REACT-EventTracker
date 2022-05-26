@@ -1,13 +1,17 @@
 import axios from 'axios'
-import actiontypes from "../actionTypes"
+import actiontypes from "../actiontypes"
 
 export const getEvents = () => {
     return async (dispatch) => {
         dispatch(loading(true))
-        const res = await axios.get('http://localhost:3000/events')
-        if(res.status === 200) {
+        try{
+            const res = await axios.get('http://localhost:3000/events/')
             dispatch(setEvents(res.data))
         }
+        catch(err) {
+            dispatch(eventsFailure(err.message))
+        }
+
     }
  }
 
@@ -15,7 +19,7 @@ export const getEvents = () => {
     return async dispatch => {
         dispatch(loading(true))
         try {
-            const res = await axios.event('http://localhost:3000/events', event)
+            const res = await axios.event('http://localhost:3000/events/', event)
             dispatch(addToList(res.data))
             
         }

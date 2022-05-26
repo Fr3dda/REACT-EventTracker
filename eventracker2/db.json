@@ -2,17 +2,17 @@
     "events": [
     {
         "id": 1,
-        "text": "Semester",
+        "title": "Semester",
         "day": "30 maj, 2022, kl: 19:00 "
     }, 
     {
         "id": 2,
-        "text": "Fixa Pass",
+        "title": "Fixa Pass",
         "day": "25 maj, 2022, kl: 15:00 "
     }, 
     {
         "id": 3,
-        "text": "Handla kattmat",
+        "title": "Handla kattmat",
         "day": "6 juni, 2022, kl: 08:00"
     }
 ]

@@ -7,7 +7,7 @@ const Event = ( { event }) => {
   return (
     <Link className='event' to={`/events/${event.id}`}>
       <div>
-        <h3>{ event.text }</h3>
+        <h3>{ event.title }</h3>
         <p>{ event.day }  </p>
       </div>
       <button className='btn-remove'><FaTimes  /></button>

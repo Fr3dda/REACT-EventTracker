@@ -1,9 +1,9 @@
-import actiontypes from "../actionTypes"
+import actiontypes from "../actiontypes"
 import axios from "axios"
 
 export const getEventById = (id) => {
     return async dispatch => {
-        dispatch(loadEventStart())
+        dispatch(loadEvent())
 
 
         try {
@@ -16,9 +16,9 @@ export const getEventById = (id) => {
     }
 }
 
-const loadEventStart = () => {
+const loadEvent = () => {
     return {
-        type: actiontypes().event.loadEventStart
+        type: actiontypes().event.loadEvent
     }
 }
 const loadEventSuccess = (event) => {

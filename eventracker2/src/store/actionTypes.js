@@ -3,16 +3,15 @@
 const actiontypes = () => {
     return {
         events: {
-            loading: 'LOADING_EVENTS',
             setEvents: 'SET_EVENTS',
-            addNewEvent: 'ADD_NEW_EVENT',
-            failure: 'EVENT_FAILURE'
+            loading: 'LOADING',
+            failure: 'EVENT_FAILURE',
+            addNewEvent: 'ADD_NEW_EVENT'
         },
         event: {
-            setEvent: 'SET_EVENT',
-            addNewEvent: 'ADD_EVENT',
-            loadEventStart: 'LOAD_EVENT_START',
+            loadEvent: 'LOAD_EVENT',
             loadEventSuccess: 'LOAD_EVENT_SUCCESS',
+            loadEventFailure: 'LOAD_EVENT_FAILURE',
         }
 
 

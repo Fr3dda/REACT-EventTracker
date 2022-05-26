@@ -1,7 +1,7 @@
 import Event from './Event'
 import { useDispatch, useSelector } from 'react-redux'
 import { useEffect } from 'react'
-import { getEvents } from '../store/actions/events.action'
+import { getEvents } from '../store/actions/eventsAction'
 
 
 const Events = () => {

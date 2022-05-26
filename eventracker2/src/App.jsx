@@ -1,23 +1,23 @@
+
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import './App.css'
 import Navbar from './components/Navbar'
+import { getEvents } from './store/actions/eventsAction';
 import Views from './Views/Views';
-
-
-/* import { getEvents } from './store/actions/events.action'
-import { useDispatch } from 'react-redux';
-import { useEffect } from 'react' */
-
-
 
 function App() {
 
 
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(getEvents())
+  }, [dispatch])
 
 
 
-
-
-  return (
+return (
 
     <div className="App">
       <Navbar title="Event Tracker" />
@@ -26,7 +26,6 @@ function App() {
         </div>
     </div>
 
-
-  )
+  );
 }
 export default App;
