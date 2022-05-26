@@ -13,7 +13,7 @@ const eventsReducer = (state = initState, action) => {
         case actiontypes().events.loading:
             return {
                 ...state,
-                loading: true
+                loading: action.payload
             }
 
         case actiontypes().events.setEvents:
@@ -23,9 +23,15 @@ const eventsReducer = (state = initState, action) => {
                 error: null
             }
 
+            case actiontypes().events.failure:
+                return {
+                  data: [],
+                  loading: false,
+                  error: action.payload
+                }
+
         case actiontypes().events.addNewEvent:
             return{
-                ...state,
                 data: [...state.data, action.payload],
                 loading: false,
                 error: null

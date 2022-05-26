@@ -17,6 +17,7 @@ export const getEvents = () => {
         try {
             const res = await axios.event('http://localhost:3000/events', event)
             dispatch(addToList(res.data))
+            
         }
         catch(err) {
             dispatch(eventsFailure(err.message))
@@ -24,7 +25,13 @@ export const getEvents = () => {
     }
 }
 
+const addToList = (event) => {
+    return {
+        type: actiontypes().events.addNewEvent,
+        payload: event
 
+   }
+}
 
 
  const loading = () => {
@@ -40,13 +47,7 @@ export const getEvents = () => {
     }
  }
 
- const addToList = (event) => {
-     return {
-         type: actiontypes().events.addNewEvent,
-         payload: event
 
-    }
- }
  
  const eventsFailure = (payload) => {
     return {

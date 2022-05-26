@@ -95,14 +95,31 @@ body, html{
 
 
 /*  EVENT */
- .event{
-   background: rgba(214, 214, 214, 0.527);
-   margin: 9px;
-   padding: 9px 16px;
-   cursor: pointer;
-   border-radius: 20px;
+ .event {
+  margin: 9px;
+  display: flex;
+  padding: 9px 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
  }
 
+ .event:hover{
+   color:  rgb(231, 131, 0);
+ }
+.btn-remove{
+  background: none;
+  border: none;
+  font-size: 20px;
+  transition: .2s ease-in-out
+}
+.btn-remove:hover{
+  transform: scale(1.25);
+}
  .event h3{
   display: flex;
   align-items: center;
@@ -116,7 +133,7 @@ body, html{
  }
 
 /*  Event End */
-.create-container{}
+
 
 /* CREATE EVENT */
 .add-form{

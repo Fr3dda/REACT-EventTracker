@@ -1,9 +1,12 @@
 import React from 'react'
-import EventContainer from '../components/EventContainer'
+import Events from '../components/Events'
 
 const EventView = () => {
   return (
-    <EventContainer/>
+    <div>
+      <h2> Glömt något...?</h2>
+      <Events/>
+    </div>
   )
 }
 

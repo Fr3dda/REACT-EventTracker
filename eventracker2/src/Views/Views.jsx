@@ -10,7 +10,7 @@ const Views = () => {
     <Routes >
         <Route path='/' element={ <EventView /> } />
         <Route path='/create' element={ <CreateView /> } />
-        <Route path='/event/:id' element={ <EventDetailView /> } />
+        <Route path='/events/:id' element={ <EventDetailView /> } />
     </Routes>
   )
 }
