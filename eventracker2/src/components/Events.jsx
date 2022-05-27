@@ -14,11 +14,11 @@ const Events = () => {
 const { data: events } = useSelector(state => state.events)
     
   return (
-    <>
+    <div>
       {events.map((event) => (
-        <Event key={event.id}event={event}  />
-        ))}
-    </>
+        <Event key={event.id}event={event}/>
+         ))}
+    </div>
 
   )
 }

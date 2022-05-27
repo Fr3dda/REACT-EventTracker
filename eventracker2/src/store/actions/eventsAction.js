@@ -1,6 +1,8 @@
 import axios from 'axios'
 import actiontypes from "../actiontypes"
 
+
+
 export const getEvents = () => {
     return async (dispatch) => {
         dispatch(loading(true))
@@ -28,6 +30,35 @@ export const getEvents = () => {
         }
     }
 }
+
+/* export const removeEvent = (id) => {
+    return async dispatch => {
+        dispatch(loading(true))
+
+            await axios.event(`http://localhost:3000/events/${id}`, {
+                method: "DELETE_EVENT",
+            })
+        .then((res) => {
+            console.log(res.json);
+            if ( res.status !== 200){
+                return;
+            } else {
+                setEvents(
+                    events &&
+                        events.filter((event) => {
+                            return event.id !== id;
+                        })
+                );
+            }
+        })
+        .catch((err) => {
+            console.log(err);
+        });
+
+    }
+    
+} */
+
 
 const addToList = (event) => {
     return {
@@ -59,3 +90,4 @@ const addToList = (event) => {
       payload
     }
   }
+

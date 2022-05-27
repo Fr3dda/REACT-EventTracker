@@ -6,7 +6,13 @@ import Navbar from './components/Navbar'
 import { getEvents } from './store/actions/eventsAction';
 import Views from './Views/Views';
 
+
+
+
+
 function App() {
+
+
 
 
   const dispatch = useDispatch()
