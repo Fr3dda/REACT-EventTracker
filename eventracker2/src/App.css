@@ -19,15 +19,15 @@ body, html{
 }
 .navbar .nav-container{
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 80%;
   margin: 0 auto;
+  flex-direction: column;
 }
 .navbar-brand{
   color: #00fdfdc2;
   text-shadow: 2px 2px 3px rgba(129, 116, 1, 0.671);
-  font-size: 1rem;
+  font-size: 3rem;
   font-weight: 700;
   text-decoration: none;
 }
@@ -41,8 +41,8 @@ body, html{
 .nav-link {
   color: #fff;
   text-decoration: none;
-  padding: .5rem;
-  font-size: .8rem;
+  padding: 0  2rem 0 2rem;
+  font-size: 1.2rem;
 }
 .nav-link:hover{
   color: #00fdfdc2;

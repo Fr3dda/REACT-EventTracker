@@ -8,11 +8,6 @@ const EventView = () => {
 
   const dispatch = useDispatch()
 
-// DELETE EVENT
-
-
-
-
 
   useEffect(() => {
     dispatch(getEvents())
@@ -24,10 +19,7 @@ const EventView = () => {
     <div>
       <h2> Glömt något...?</h2>
         <div>
-          {events.map((event, index) =><Event 
-                                key={index}
-                                event={event}
-                                 /> )}
+          {events.map((event, index) =><Event key={index} event={event} /> )}
         </div>
     </div>
   )

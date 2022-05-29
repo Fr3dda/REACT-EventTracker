@@ -1,20 +1,13 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "Semester",
-      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa culpa, perspiciatis cupiditate",
-      "day": "2022-05-30T15:40",
-      "reminder": true
-    },
-
-    {
-      "title": "Sola och Bada! ",
-      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa culpa, perspiciatis cupiditate ab nostrum necessitatibus?\n",
-      "day": "2022-05-31T20:30",
+      "title": "Morsdag",
+      "body": "Glöm förfan inte detta datum!",
+      "day": "2022-05-29T00:00",
       "reminder": false,
       "": "false",
-      "id": 5
+      "id": 1
     }
+
   ]
 }
