@@ -2,7 +2,7 @@ import actiontypes from "../actiontypes";
 
 
 const initState = {
-    data: null,
+    data: [],
     loading: false,
     error: null
 

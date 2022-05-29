@@ -7,7 +7,7 @@ export const getEventById = (id) => {
 
 
         try {
-            const res = await axios.get('http://localhost:3000/events/' + id)
+            const res = await axios.get('http://localhost:5000/posts/' + id)
             dispatch(loadEventSuccess(res.data))
         }
         catch (err) {

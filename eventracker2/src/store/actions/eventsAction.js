@@ -1,4 +1,5 @@
 import axios from 'axios'
+
 import actiontypes from "../actiontypes"
 
 
@@ -7,7 +8,7 @@ export const getEvents = () => {
     return async (dispatch) => {
         dispatch(loading(true))
         try{
-            const res = await axios.get('http://localhost:3000/events/')
+            const res = await axios.get('http://localhost:5000/posts')
             dispatch(setEvents(res.data))
         }
         catch(err) {
@@ -21,7 +22,7 @@ export const getEvents = () => {
     return async dispatch => {
         dispatch(loading(true))
         try {
-            const res = await axios.event('http://localhost:3000/events/', event)
+            const res = await axios.post('http://localhost:5000/posts', event)
             dispatch(addToList(res.data))
             
         }
@@ -31,31 +32,18 @@ export const getEvents = () => {
     }
 }
 
-/* export const removeEvent = (id) => {
+/* export const deleteEvent = (id) => {
     return async dispatch => {
         dispatch(loading(true))
 
-            await axios.event(`http://localhost:3000/events/${id}`, {
+           const res = await axios.delete(`http://localhost:5000/events/${id}`, {
                 method: "DELETE_EVENT",
             })
-        .then((res) => {
-            console.log(res.json);
-            if ( res.status !== 200){
-                return;
-            } else {
-                setEvents(
-                    events &&
-                        events.filter((event) => {
-                            return event.id !== id;
-                        })
-                );
-            }
-        })
-        .catch((err) => {
-            console.log(err);
-        });
 
-    }
+            res.status !== 200
+            ? setEvents(events.filter((event) => event.id !== id))
+            : alert('Error deleting this event')
+        }
     
 } */
 

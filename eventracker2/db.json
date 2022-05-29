@@ -1,19 +1,20 @@
 {
-    "events": [
+  "posts": [
     {
-        "id": 1,
-        "title": "Semester",
-        "day": "30 maj, 2022, kl: 19:00 "
-    }, 
+      "id": 1,
+      "title": "Semester",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa culpa, perspiciatis cupiditate",
+      "day": "2022-05-30T15:40",
+      "reminder": true
+    },
+
     {
-        "id": 2,
-        "title": "Fixa Pass",
-        "day": "25 maj, 2022, kl: 15:00 "
-    }, 
-    {
-        "id": 3,
-        "title": "Handla kattmat",
-        "day": "6 juni, 2022, kl: 08:00"
+      "title": "Sola och Bada! ",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa culpa, perspiciatis cupiditate ab nostrum necessitatibus?\n",
+      "day": "2022-05-31T20:30",
+      "reminder": false,
+      "": "false",
+      "id": 5
     }
-]
+  ]
 }
